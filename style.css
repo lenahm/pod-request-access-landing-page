@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Chivo", sans-serif;
+  font-weight: 100;
+  color: var(--white);
+  background-color: var(--blue-950);
+  background-image: url("./assets/desktop/image-host.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.container {
+  width: 80%;
+  height: 70%;
+  position: relative;
+}
+
+.bg-pattern-dots {
+  position: absolute;
+  right: -200px;
+  bottom: -50px;
+}
+
+main {
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  padding: 5rem 2rem 0 0;
+  background-color: var(--blue-950);
+}
+
+h1 {
+  line-height: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 48px;
+  font-weight: 200;
+}
+
+p {
+  margin-top: 2rem;
+  padding-right: 15rem;
+  line-height: 1.4rem;
+  color: var(--blue-300);
+  font-size: 18px;
+}
+
+.input-container {
+  justify-content: space-between;
+  width: 60%;
+  height: 45px;
+  margin-top: 3rem;
+  background-color: var(--blue-900);
+  border-radius: 20px;
+  overflow: hidden;
+
+  input {
+    padding: 1rem 1.7rem;
+    background-color: var(--blue-900);
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--blue-300);
+
+    &::placeholder {
+      color: var(--blue-300);
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    margin: 3px;
+    padding: 0 1.5rem;
+    background-color: var(--green);
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--blue-950);
+  }
+}
+
+.hosting-platforms-container {
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+
+  img {
+    height: 20px;
+  }
+}
+
+/* Utility Classes */
+
+.flex {
+  display: flex;
+}
+
+.highlight-text {
+  color: var(--green);
+}
+
+/* Colors */
+
+:root {
+  --green: #54e6af;
+  --blue-950: #121725;
+  --blue-900: #2c344b;
+  --blue-600: #5a668a;
+  --blue-300: #c2cbe5;
+  --white: #fff;
+  --red: #fb3e3e;
+}
