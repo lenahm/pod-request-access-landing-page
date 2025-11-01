@@ -124,11 +124,11 @@ p {
 }
 
 #form-error-msg {
+  padding-left: 1rem;
+  padding-top: 0.3rem;
   font-size: 10px;
   font-weight: 400;
   color: var(--red);
-  padding-left: 1rem;
-  padding-top: 0.3rem;
 }
 
 /* Colors */
