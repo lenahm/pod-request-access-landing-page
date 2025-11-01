@@ -15,10 +15,11 @@
         <main class="flex">
             <h1><span class="highlight-text">Publish your podcasts</span><br>everywhere.</h1>
             <p>Upload your audio to Pod with a single click. We'll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
-            <div class="input-container flex">
-                <input type="text" placeholder="Email address">
-                <button>Request Access</button>
-            </div>
+            <form action="#" id="access-form" class="input-container flex" novalidate>
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Request Access</button>
+            </form>
+            <span id="form-error-msg" hidden>Oops! Please check your email</span>
             <div class="hosting-platforms-container flex">
                 <img src="./assets/desktop/spotify.svg">
                 <img src="./assets/desktop/apple-podcast.svg">
@@ -29,4 +30,5 @@
         <img src="./assets/desktop/bg-pattern-dots.svg" class="bg-pattern-dots">
     </div>
 </body>
+<script src="script.js"></script>
 </html>

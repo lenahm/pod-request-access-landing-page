@@ -65,12 +65,16 @@ p {
   border-radius: 20px;
   overflow: hidden;
 
+  &:focus-within {
+    outline: 2px solid var(--red);
+  }
+
   input {
     padding: 1rem 1.7rem;
     background-color: var(--blue-900);
     border: none;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--blue-300);
 
     &::placeholder {
@@ -90,8 +94,12 @@ p {
     border: none;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--blue-950);
+
+    &:hover {
+      background-color: var(--light-green);
+    }
   }
 }
 
@@ -115,10 +123,19 @@ p {
   color: var(--green);
 }
 
+#form-error-msg {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--red);
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+
 /* Colors */
 
 :root {
   --green: #54e6af;
+  --light-green: #6beabaff;
   --blue-950: #121725;
   --blue-900: #2c344b;
   --blue-600: #5a668a;
